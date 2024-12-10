@@ -350,7 +350,7 @@ footer {
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
   }
   
@@ -439,7 +439,21 @@ footer {
     }
   }
   
+/* Mobile Layout Changes */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack elements vertically on smaller devices */
+    gap: 15px;
+  }
+}
 
+/* For very small devices like phones */
+@media (max-width: 480px) {
+  .footer-links li,
+  .social-link {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
 
 
 
