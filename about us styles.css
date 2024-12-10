@@ -95,3 +95,20 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
 }
+
+/* Mobile Layout Changes */
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack elements vertically on smaller devices */
+      gap: 15px;
+    }
+  }
+  
+  /* For very small devices like phones */
+  @media (max-width: 480px) {
+    .footer-links li,
+    .social-link {
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  }
+  
